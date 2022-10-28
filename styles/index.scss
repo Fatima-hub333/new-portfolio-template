@@ -18,7 +18,7 @@
   --color-grey5: #2a2e35;
   --color-grey6: #12181b;
   --br-sm-2: 14px;
-  --box-shadow-1: 0 3px 15px rgba(0, 0, 0, .3)
+  --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
 }
 
 body {
@@ -93,6 +93,13 @@ section {
   align-items: center;
   justify-content: center;
   transform: translateY(-50%);
+  .active-btn{
+    background-color: var(--color-secondary) !important;
+    transition: all .4s ease-in-out;
+    i{
+      color: var(--color-white) !important;
+    }
+  }
   .control{
     padding: 1rem;
     cursor: pointer;
@@ -104,7 +111,11 @@ section {
     justify-content: center;
     align-items: center;
     margin: .7rem 0;
-    box-shadow: ;
+  }
+  i {
+    font-size: 1.2rem;
+    color: var(--color-grey2);
+    pointer-events: none;
   }
 }
 
@@ -112,9 +123,4 @@ section {
   display: none;
   transform: translateY(0) scale(1);
   box-shadow: var(--box-shadow-1);
-  i {
-    font-size: 1.2rem;
-    color: var(--color-grey2);
-    pointer-events: none;
-  }
 }
